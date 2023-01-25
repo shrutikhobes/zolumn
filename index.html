@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html oncontextmenu="return false">
-  <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-</html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ZOLUMN</title>
     <style>
       /* Add styles for the website here */
@@ -17,62 +14,45 @@
         align-items: center;
         background-color: black;
       }
-    
 
-     img {
-        display: block;
-        position: absolute;
-        user-select: none;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 901px;
-        height: auto;
-      }
-    
-    @media (min-width:300px)  {
       img {
-        width: 1000px;
-        height: auto;
+       display: block;
+       position: absolute;
+       user-select: none;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       max-width: 100%; /* added */
+       width: auto; /* added */
+       height: auto;
       }
-  }
-    
-    </style>
-    </head>
-    <body>
-    <img src="Banner.png" draggable="false" alt="Banner Image" style="width:60%; height: auto;">
-  
-    </body>
-    </html>
-    <style>
 
-      
-      /* Add styles for the footer */
+     /* Add styles for the footer */
       #footer {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-style: normal;
-        font-size: small;
-        color: #3f3f3f;
-        text-align: center;
-        position: absolute;
-        bottom: 8px;
-        max-width: 100%;
-        height: auto;
+       font-size: small;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       color: #3f3f3f;
+       text-align: center;
+       position: absolute;
+       bottom: 8px;
+       max-width: 100%;
+       width: auto; /* added */
+       height: auto;
       }
 
-
-    @media (orientation: portrait) {
-    #footer {
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     font-size: x-small;
-     color: #3f3f3f;
-     text-align: center;
-     bottom: 8px;
+     /* added */
+     @media screen and (max-width: 600px) {
+      img {
+       width: 100%;
+      }
+      #footer {
+       font-size: x-small;
+      }
     }
-  }
-  </style>
-  </head>
-  <body>
-    <div id="footer"> &copy; 2023 All Rights Reserved </div> 
-  </body>
+</style>
+</head>
+<body>
+  <img src="Banner.png" draggable="false" alt="Banner Image">
+  <div id="footer"> &copy; 2023 All Rights Reserved </div> 
+</body>
 </html>
